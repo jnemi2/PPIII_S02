@@ -3,11 +3,11 @@
 #include <string>
 
 typedef struct {
-    int year;
-    unsigned int month;
-    unsigned int day;
+    std::string year;
+    std::string month;
+    std::string day;
 } Date;
 
-std::string abbreviate(Date date);
+Date newDate(std::string data);
 
 #endif

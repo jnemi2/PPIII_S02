@@ -4,31 +4,18 @@
 
 using namespace std;
 
-string abbreviate(Date date){
-    switch(date.month){
-        case 1:
-            return "JAN";
-        case 2:
-            return "FEB";
-        case 3:
-            return "MAR";
-        case 4:
-            return "APR";
-        case 5:
-            return "MAY";
-        case 6:
-            return "JUN";
-        case 7:
-            return "JUL";
-        case 8:
-            return "AUG";
-        case 9:
-            return "SEP";
-        case 10:
-            return "OCT";
-        case 11:
-            return "NOV";
-        default:
-            return "DEC";
-    }
+Date newDate(string data){
+    Date date;
+    char txt[3];
+    txt[2] = '\0';
+    txt[0] = data[0];
+    txt[1] = data[1];
+    date.day = txt;
+    txt[0] = data[3];
+    txt[1] = data[4];
+    date.month = txt;
+    txt[0] = data[6];
+    txt[1] = data[7];
+    date.year = txt;
+    return date;
 }
