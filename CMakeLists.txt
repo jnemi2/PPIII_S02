@@ -3,4 +3,4 @@ project(base_project C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(base_project main.c date.c date.h)
+add_executable(base_project main.cpp date.cpp date.h)
