@@ -3,4 +3,4 @@ project(PPIII_S02)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(PPIII_S02 main.cpp date.cpp date.h)
+add_executable(PPIII_S02 main.cpp stock.cpp stock.h)
